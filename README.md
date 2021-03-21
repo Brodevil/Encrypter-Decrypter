@@ -2,7 +2,7 @@
 ![image](https://user-images.githubusercontent.com/75004567/111901047-bcda1d00-8a5b-11eb-89df-fcda33a89e7f.png)
 
 # Program
-- The program Can just Encrypt the Text and print it as a numeric form 
+- The Simple Python program That Can just Encrypt the Text and print it as a numeric form 
 - And you can just Decrypt text value too
 - As per the UI, At the startup of the program Press 0 to Encript the Value or Press 1 to Decrypt the value
 - If you selected 0
