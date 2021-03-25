@@ -25,16 +25,18 @@ def decrypt(nums):
                     '1': "223", '2': "354", '3': "445", '4': "234", '5': "890", '6': "089", '7': "349", '8': "867", '9': "650", '0': "940",
                     " ": "547", ",": "865", ";": "149", "@": "887", "!": "809", "#": "768", "&": "795", "(": "678", ")": "679", "-": "760", "_": "764"}
     data = nums.split(".")
-    print(data)
     readable = list()
-    for i, v in encrypt_data.items():
-        for s in data:
 
-            if s == v:
-                print(i, v, s)
-                print("Conditions Satisfied")
-                readable.append(i)
-                break
+    def index(str, iterator):
+        for place, data in enumerate(iterator):
+            if str == data:
+                return place
+
+    real_data = list(encrypt_data.keys())
+    encrypted_data = list(encrypt_data.values())
+    for user_data in data:
+        position = index(user_data, encrypted_data)
+        readable.append(real_data[position])
     data = "".join(readable)
     return data
 
